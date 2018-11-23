@@ -40,7 +40,7 @@ public class MyBatisConfig {
 		SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
 		// factoryBean.setDataSource(new Log4jdbcProxyDataSource(ds));
 		factoryBean.setDataSource(ds);
-		factoryBean.setTypeAliasesPackage("com.example.demo.entity");
+		factoryBean.setTypeAliasesPackage("com.example.demo.dataset");
 		factoryBean.setMapperLocations(
 				new PathMatchingResourcePatternResolver().getResources("classpath:com/example/demo/mapper/*.xml"));
 
